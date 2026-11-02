@@ -1,0 +1,120 @@
+{
+  "tests": [
+    [
+      "HTML carrega em contexto isolado",
+      "PASS"
+    ],
+    [
+      "sem downloads de redes externas",
+      "PASS"
+    ],
+    [
+      "modo sem salvar funciona",
+      "PASS"
+    ],
+    [
+      "navegação biblioteca 320px",
+      "PASS"
+    ],
+    [
+      "evita transbordamento horizontal 320px",
+      "PASS"
+    ],
+    [
+      "navegação biblioteca 390px",
+      "PASS"
+    ],
+    [
+      "evita transbordamento horizontal 390px",
+      "PASS"
+    ],
+    [
+      "navegação biblioteca 768px",
+      "PASS"
+    ],
+    [
+      "evita transbordamento horizontal 768px",
+      "PASS"
+    ],
+    [
+      "navegação biblioteca 1280px",
+      "PASS"
+    ],
+    [
+      "evita transbordamento horizontal 1280px",
+      "PASS"
+    ],
+    [
+      "biblioteca busca + detalhe + tutor fonte",
+      "PASS"
+    ],
+    [
+      "tutor cálculo determinístico preservado",
+      "PASS"
+    ],
+    [
+      "tutor não ecoa email",
+      "PASS"
+    ],
+    [
+      "tutor apresenta aula 5-7",
+      "PASS"
+    ],
+    [
+      "novo quiz 5-7",
+      "PASS"
+    ],
+    [
+      "laboratório 5-7",
+      "PASS"
+    ],
+    [
+      "missões 5-7",
+      "PASS"
+    ],
+    [
+      "tutor apresenta aula 8-10",
+      "PASS"
+    ],
+    [
+      "novo quiz 8-10",
+      "PASS"
+    ],
+    [
+      "laboratório 8-10",
+      "PASS"
+    ],
+    [
+      "missões 8-10",
+      "PASS"
+    ],
+    [
+      "tutor apresenta aula 11-12",
+      "PASS"
+    ],
+    [
+      "novo quiz 11-12",
+      "PASS"
+    ],
+    [
+      "laboratório 11-12",
+      "PASS"
+    ],
+    [
+      "missões 11-12",
+      "PASS"
+    ],
+    [
+      "arquivos sem erros JS",
+      "PASS"
+    ],
+    [
+      "navegação não disparou rede",
+      "PASS"
+    ]
+  ],
+  "passed": 28,
+  "failed": 0,
+  "errors": [],
+  "external_requests": []
+}

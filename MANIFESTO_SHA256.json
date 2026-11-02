@@ -1,126 +1,42 @@
 {
-  "AVALIACAO_DE_CONFORMIDADE.txt": {
-    "sha256": "30b4cc1ac11d51c8187fbf1cf8e9a66662bafe0a152637884a6daf390839c7d1",
-    "bytes": 3669
-  },
-  "COMO_ABRIR.txt": {
-    "sha256": "bb70f0e2e2c48a4972f006295249a2bd79e8dcad23c11b6e28472393ed4b5392",
-    "bytes": 1114
-  },
-  "Inteligent_Hability_V3_5_Standalone.html": {
-    "sha256": "8b9afbe59beb9f77d6b64e147087625bdae256dfca3abaec44ec7068915dbe71",
-    "bytes": 328876
-  },
-  "NOTAS_DE_CONFORMIDADE_V3_5.md": {
-    "sha256": "954ad3011046dda84d1f85dab78cf0862aa0c5d4e55beb2029f3795a59afaee5",
-    "bytes": 1577
-  },
-  "POLITICA_DE_PRIVACIDADE.txt": {
-    "sha256": "5f92bf044d3030b2652e2e5e8172886bb0768375bd095df6685d1ab911adfda3",
-    "bytes": 4463
-  },
-  "QA_RELATORIO_V3_5.md": {
-    "sha256": "218754b025072bc5f595a3245d1b981671fd79df5093f99f3d4769806bdc6a7f",
-    "bytes": 3991
-  },
-  "README.md": {
-    "sha256": "04e0c122a38cf7e6017914c613dbbb726ff574eb36f013180dc2f4e61378b4b2",
-    "bytes": 5358
-  },
-  "TERMOS_DE_USO.txt": {
-    "sha256": "72314dfaebbf127b09eb1619a7bef2c021766707a63e2c1421f580dc99940d38",
-    "bytes": 3557
-  },
-  "ai_35.js": {
-    "sha256": "964d5f42fcbf0cbd451bb0ca3a7bf5d44f492c1d1dfafc7a790b7720c612eba2",
-    "bytes": 16464
-  },
-  "app.js": {
-    "sha256": "3297c46fceed58d71e2ec1c657a1288b1a92715b1b8351fe51946e2ea079d371",
-    "bytes": 46488
-  },
-  "assets/emblema-inteligent-hability.png": {
-    "sha256": "481eeece7576a63801362f8e86705810648d2846376a679f5a5e39cd1f5389d1",
-    "bytes": 44906
-  },
-  "assets/logomarca-inteligent-hability.png": {
-    "sha256": "895e5fa050571713764946c36232c323d349014e10bb0ee5e6f837890acdb9a0",
-    "bytes": 86034
-  },
-  "build_standalone.py": {
-    "sha256": "6746aefd28037cffa3f559e9fba07ed455c86220f863a49161445176ccd619f9",
-    "bytes": 1674
-  },
-  "data.js": {
-    "sha256": "352681dcc31abd761931ca07c6e7df21fea8f7fef0ee488364b48a6332d42707",
-    "bytes": 46951
-  },
-  "favicon.svg": {
-    "sha256": "85579fa033adcccc5230c54608e7bf9957a7eab2a55a3fddd312e193e403cfd8",
-    "bytes": 734
-  },
-  "index.html": {
-    "sha256": "1e81d3cbf327218cd747600144985cbf6c7119a04d89a1bad58f295418fc0359",
-    "bytes": 31351
-  },
-  "knowledge_35.js": {
-    "sha256": "91b460f8481d4edd925483c3d06f3ceb9797a100ce8619f8092c058297c5f629",
-    "bytes": 15561
-  },
-  "local_ai.js": {
-    "sha256": "07b649d6e5b4633fc36317748ad937298693ba6365ed96dd96bd6528eb7952bc",
-    "bytes": 15246
-  },
-  "mobile_verificacao.png": {
-    "sha256": "4f60dcb10ad0bb7561aa80538e2eb6bd2672f54bf24f0a375898eaedc86c9403",
-    "bytes": 399679
-  },
-  "qa/browser_results.json": {
-    "sha256": "de3cf47648d35bddffe0a30b7c2172c3f5b9a93cf2d63f75793ca0492783f7bd",
-    "bytes": 4448
-  },
-  "qa/captura_1280.png": {
-    "sha256": "e56f7a4b5469b813e01b5ebe29e3c9befe9d35058e75e5cd923f3f44df71341c",
-    "bytes": 503834
-  },
-  "qa/captura_390.png": {
-    "sha256": "2970d34a0a503ceb27a9f74ca4fe4a73e4e30f04858f909e16f6e7cc2beb36b4",
-    "bytes": 397551
-  },
-  "qa/capture_tutor.py": {
-    "sha256": "5b0b11960280d2dbf53592604cb129d3e90c2a75cfd539ce4da9c3a2ae77245e",
-    "bytes": 988
-  },
-  "qa/test_ai35.js": {
-    "sha256": "808a30ada6aafc113b6335f8a2bb3825dd84ed0c25c0e9b8a6744b9fe0ef438a",
-    "bytes": 7588
-  },
-  "qa/test_browser_v35.py": {
-    "sha256": "7d516cfae1468dd37dc760cce10d3f3da01375e5a1efdb1ebe3dbbb6fadf4e43",
-    "bytes": 11983
-  },
-  "qa/test_catalog35.js": {
-    "sha256": "1b2014a4f409291123c1bb1d195d3a1e3740fc9629b9554369bc55dededc6b0d",
-    "bytes": 1401
-  },
-  "qa/test_engine.js": {
-    "sha256": "783372207f931add64f24f528f51fae552fc10d5d5f66b9bda39b0fa2cf0e010",
-    "bytes": 7805
-  },
-  "qa/test_http_origin_experimental.py": {
-    "sha256": "68e56385e0b5aae309c96d4d6f5a04a4cb74bc99a8b2340e6f6865522d0bea63",
-    "bytes": 4761
-  },
-  "qa/tutor_390.png": {
-    "sha256": "e27c58cd40c0c5d2cbc8b9cf15de6562197b7160def00bd4c12d4c0a57646fec",
-    "bytes": 352667
-  },
-  "styles.css": {
-    "sha256": "1d856f3bccca09cc5bc9d12c17480b5bae17908aec4d6084ca8409b1e449be12",
-    "bytes": 21491
-  },
-  "tutor_data.js": {
-    "sha256": "6d1f5f569ada71ba342db1784ab601f669284251a649eb0f71ec0f2d51f7fede",
-    "bytes": 14423
+  "produto": "Inteligent Hability",
+  "versao": "3.6",
+  "hash_algoritmo": "SHA256",
+  "arquivos": {
+    "AVALIACAO_DE_CONFORMIDADE.txt": "30b4cc1ac11d51c8187fbf1cf8e9a66662bafe0a152637884a6daf390839c7d1",
+    "COMO_ABRIR.txt": "aae8fe3400b604024aeed4e18161de09b24b8f8b2a7da339b44737cf336dcc69",
+    "DIAGNOSTICO_E_CORRECOES.md": "f215cbc7bd63f2138f7a2dc2c2f493372dc0aeacc2a6ad1f80bee586bab902be",
+    "FONTES_E_METODOLOGIA_V3_6.md": "ad5a26841f1842b70bc30aca25268648a8be91ecbd3b36de226eb32b7581dc6d",
+    "Inteligent_Hability_V3_6_Standalone.html": "a714bfa80887fea82d78d3a75f02861a8a8cdfa1e26e1f3520313aae5c22a746",
+    "POLITICA_DE_PRIVACIDADE.txt": "e4908c377cca7fdccaf9c5cb106d258e86c6807a1b65ff6cdfc96126bbb84e98",
+    "QA_RELATORIO_V3_6.md": "2aae08415c0fbe8f756246e59da672b96b1e4ba2fabe3493865da326bd362e24",
+    "README.md": "3975b7ed754d66aae59f6866b4396b1cb64f7c76f62ace1dfa756e340299c9ed",
+    "TERMOS_DE_USO.txt": "59db563d235957522f96dfbaf72f8276bf7a5a3d88ea025e09ed350185720b48",
+    "ai_35.js": "964d5f42fcbf0cbd451bb0ca3a7bf5d44f492c1d1dfafc7a790b7720c612eba2",
+    "app.js": "5dd949d0c3829951ec9870d0744399fa09c0a481762e0595260cb83230013816",
+    "assets/emblema-inteligent-hability.png": "481eeece7576a63801362f8e86705810648d2846376a679f5a5e39cd1f5389d1",
+    "assets/logomarca-inteligent-hability.png": "895e5fa050571713764946c36232c323d349014e10bb0ee5e6f837890acdb9a0",
+    "build_standalone.py": "3a8bbd2991c7c4334e25c4de3bf90deae050721ee8e96bde4e9d2790462d9ba9",
+    "content36.js": "13753ad1cb12a33c85957ebd037619daf2ee57bcfa11c05e75696f4ed4a329cd",
+    "data.js": "352681dcc31abd761931ca07c6e7df21fea8f7fef0ee488364b48a6332d42707",
+    "enrich36.js": "48189a8b8c027df5b413bfa9f5303d3aa3986087cf01a6d39989f9602e895bd6",
+    "favicon.svg": "85579fa033adcccc5230c54608e7bf9957a7eab2a55a3fddd312e193e403cfd8",
+    "index.html": "993027593ebd472ea88ec03414c4c1a2e8fefd980e8429682febde931b3f56e6",
+    "knowledge_35.js": "91b460f8481d4edd925483c3d06f3ceb9797a100ce8619f8092c058297c5f629",
+    "local_ai.js": "07b649d6e5b4633fc36317748ad937298693ba6365ed96dd96bd6528eb7952bc",
+    "qa/biblioteca_390.png": "c9ddf2603f6dca9a45f3f2db1dec657705730bd44eb48d6814524a43faef3795",
+    "qa/browser36_results.json": "7dee28a4fb1c20ef5bd83a4c412bf099ed765297fa08bfd8733ec0463e624e4d",
+    "qa/capture_tutor.py": "5b0b11960280d2dbf53592604cb129d3e90c2a75cfd539ce4da9c3a2ae77245e",
+    "qa/test_ai35.js": "808a30ada6aafc113b6335f8a2bb3825dd84ed0c25c0e9b8a6744b9fe0ef438a",
+    "qa/test_browser36.py": "55e78e51dfc6a2346493dac771e25f611568640218745cdc5ed684c99a81f841",
+    "qa/test_browser_v35.py": "7d516cfae1468dd37dc760cce10d3f3da01375e5a1efdb1ebe3dbbb6fadf4e43",
+    "qa/test_catalog35.js": "1b2014a4f409291123c1bb1d195d3a1e3740fc9629b9554369bc55dededc6b0d",
+    "qa/test_engine.js": "783372207f931add64f24f528f51fae552fc10d5d5f66b9bda39b0fa2cf0e010",
+    "qa/test_http_origin_experimental.py": "68e56385e0b5aae309c96d4d6f5a04a4cb74bc99a8b2340e6f6865522d0bea63",
+    "qa/test_source36.js": "e42de587a4c57fe5d7bcf58c82d711eb98b8abebec37bd7170941fa4dc76890c",
+    "source_ai36.js": "47cdd5a4a9ec29ff8f3186636c890d38214cf3c9fc62a35679a4f7383f84e5ff",
+    "sources36.js": "6b55e5686be705753afa3e24b12318622d0ff2ac1a7403be43bbfc36f0052d1c",
+    "styles.css": "17fcd46b0da9565830a8a0dbdb5bb05a648070fb3f67dbfb0ef0b35bd548ba09",
+    "tutor_data.js": "6d1f5f569ada71ba342db1784ab601f669284251a649eb0f71ec0f2d51f7fede"
   }
 }

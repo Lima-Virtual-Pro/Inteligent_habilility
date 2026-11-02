@@ -1,4 +1,4 @@
-Inteligent Hability 3.5 | © 2026 Nailson Rodrigues de Lima
+Inteligent Hability 3.6 | © 2026 Nailson Rodrigues de Lima
 
 TRANSPARÊNCIA E MELHOR INTERESSE
 Política de Privacidade
@@ -28,3 +28,6 @@ Não há canal de solicitação remota dentro deste pacote offline.
 10. Atualizações
 Alterações materiais em arquitetura, hospedagem, pagamentos, contas, analytics, tutor generativo ou compartilhamento exigem revisão desta política, da avaliação de riscos e das informações apresentadas aos responsáveis.
 Documento informativo relativo ao pacote offline; não equivale à certificação legal ou auditoria independente.
+
+11. Fontes externas opcionais
+A biblioteca mantém endereços institucionais na aplicação. Eles não são acessados automaticamente. Abrir um desses links, por escolha do usuário, pode envolver coleta de dados técnicos pelo site de destino; recomenda-se acompanhamento de adulto.

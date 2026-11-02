@@ -1,0 +1,70 @@
+/* Trilhas complementares com questões curtas e explicações verificáveis. Offline. */
+'use strict';
+const TUTOR_TOPICS = {
+ '5-7': {
+  logica:[
+   ['Classificar objetos','Classificar é reunir objetos que têm uma característica em comum. Podemos agrupar por forma, cor ou tamanho.','Se temos duas peças azuis e uma vermelha, podemos criar um grupo de peças azuis e outro de peças vermelhas.','Uma estrela vermelha e um círculo vermelho podem ficar juntos por qual característica?',['Cor','Forma','Tamanho'],0,'Os dois têm a mesma cor, embora suas formas sejam diferentes.','Olhe primeiro para o que é igual.','classificar,grupo,forma,cor'],
+   ['Encontrar sequências','Uma sequência tem uma ordem. Em algumas sequências, uma regra se repete.','Um quadrado, um círculo, um quadrado, um círculo: o próximo é quadrado.','Na sequência 2, 4, 2, 4, qual vem depois?',['6','2','1'],1,'O par 2 e 4 se repete; depois de 4 vem 2.','Leia os primeiros quatro termos em pares.','sequencia,padrao,ordem']
+  ],
+  matematica:[
+   ['Decompor quantidades','Podemos formar o mesmo número juntando grupos diferentes. Isso ajuda a calcular mentalmente.','O número 7 pode ser formado por 3 + 4 ou por 5 + 2.','Qual soma também forma 8?',['3 + 4','5 + 3','6 + 3'],1,'5 mais 3 é 8. As outras somas dão 7 e 9.','Conte usando oito pontos imaginários.','soma,adicao,numero,quantidade'],
+   ['Comparar quantidades','Para saber qual grupo tem mais, conte os objetos de cada grupo e compare os totais.','Um prato tem 6 frutas e outro tem 4; o primeiro tem 2 frutas a mais.','Qual número representa a maior quantidade?',['5','9','7'],1,'Nove é maior do que cinco e sete.','Conte na sequência de 5 até 9.','maior,menor,comparar,numero']
+  ],
+  ciencias:[
+   ['Estados da água','A água pode aparecer como líquido, gelo ou vapor; a temperatura pode provocar mudanças.','A água líquida colocada no congelador pode se transformar em gelo.','O que geralmente acontece com o gelo fora do congelador?',['Ele derrete','Ele vira pedra','Ele cresce sozinho'],0,'O gelo recebe calor do ambiente e pode passar ao estado líquido.','Pense no gelo dentro de um copo em um dia quente.','agua,gelo,derreter,temperatura'],
+   ['Observar seres vivos','Seres vivos apresentam necessidades e características que podemos investigar sem machucá-los.','Uma semente pode germinar se houver condições adequadas de água, ar e temperatura.','Qual atitude ajuda a observar uma planta?',['Arrancar todo dia','Desenhar mudanças com o tempo','Deixar sem água sempre'],1,'Registrar mudanças permite comparar o crescimento sem danificar a planta.','Cuidar e observar são partes importantes.','planta,semente,observacao,natureza']
+  ],
+  linguagem:[
+   ['Começo, meio e fim','Uma narrativa costuma apresentar uma situação, acontecimentos e algum desfecho.','Lia encontrou um livro, leu uma história e depois contou o que aprendeu.','O que aconteceu por último na história?',['Lia encontrou o livro','Lia contou o que aprendeu','Lia leu a história'],1,'A última ação narrada foi contar o que aprendeu.','Leia a frase seguindo a ordem.','historia,começo,meio,fim'],
+   ['Descobrir personagens','Personagens são aqueles que participam dos acontecimentos de uma história.','Na frase “O gato brincou com Ana”, o gato e Ana participam da ação.','Quem é personagem da frase “Beto viu uma borboleta”?',['A chuva','Beto','A escola'],1,'Beto é uma pessoa que participa da situação contada.','Pergunte: quem aparece na cena?','personagem,texto,leitura']
+  ],
+  tecnologia:[
+   ['Instruções em ordem','Um algoritmo simples é um conjunto de passos organizados para conseguir um resultado.','Para escovar os dentes: pegar a escova, colocar pasta, escovar com cuidado e enxaguar.','Qual deve ser o primeiro passo para abrir um caderno e escrever?',['Escrever com o caderno fechado','Abrir o caderno','Guardar o lápis'],1,'Precisamos abrir o caderno antes de escrever nas folhas.','O primeiro passo prepara os próximos.','algoritmo,passos,sequencia,programa'],
+   ['Proteger informações','Informações como endereço e telefone são pessoais. Na internet, devemos pedir ajuda a um adulto responsável.','Ao criar uma brincadeira, podemos usar um apelido sem divulgar nome completo ou endereço.','O que é mais seguro compartilhar em um jogo?',['Endereço da casa','Número de telefone','Nenhum dado pessoal'],2,'Evitar compartilhar dados pessoais ajuda a proteger a privacidade.','Pense se a informação identifica sua família.','seguranca,privacidade,internet,dados']
+  ]
+ },
+ '8-10': {
+  logica:[
+   ['Inferir com pistas','Inferir é formar uma conclusão a partir de informações. A conclusão precisa combinar com todas as pistas.','Se todos os livros de uma caixa são vermelhos e um objeto é livro dessa caixa, ele é vermelho.','Todos os triângulos do conjunto são verdes. A figura é um triângulo desse conjunto. Qual é sua cor?',['Verde','Vermelho','Impossível saber'],0,'A informação dada permite concluir que esse triângulo é verde.','Use a expressão “todos os triângulos”.','deducao,pistas,inferencia'],
+   ['Tabelas e possibilidades','Organizar alternativas em tabelas ajuda a não esquecer combinações.','Com duas cores de camiseta e dois tipos de calça, há 2 × 2 = 4 combinações.','Com 3 chapéus e 2 mochilas, quantas combinações são possíveis?',['5','6','9'],1,'Para cada um dos três chapéus há duas mochilas: 3 × 2 = 6.','Faça três linhas com duas opções em cada.','combinacoes,tabela,possibilidades']
+  ],
+  matematica:[
+   ['Frações equivalentes','Frações podem representar a mesma quantidade mesmo com numeradores e denominadores diferentes.','1/2 = 2/4: se dividimos uma metade em duas partes iguais, teremos duas partes de quatro.','Qual fração representa a mesma quantidade que 1/2?',['3/4','2/4','1/3'],1,'Duas de quatro partes iguais correspondem à metade do todo.','Imagine dividir uma pizza em quatro fatias iguais.','fracao,metade,equivalencia'],
+   ['Multiplicação por agrupamento','A multiplicação reúne grupos de mesma quantidade; não é necessário contar item por item.','Quatro caixas com três bolas em cada: 4 × 3 = 12 bolas.','Cinco bandejas com quatro copos em cada têm quantos copos?',['9','20','15'],1,'São cinco grupos de quatro: 5 × 4 = 20.','Some 4 cinco vezes.','multiplicacao,tabuada,grupos']
+  ],
+  ciencias:[
+   ['Cadeia alimentar','Uma cadeia alimentar ilustra como a energia passa entre organismos ao longo da alimentação.','A planta utiliza energia luminosa, o gafanhoto pode se alimentar dela, e um pássaro pode comer o gafanhoto.','Qual organismo é produtor nessa cadeia?',['Planta','Gafanhoto','Pássaro'],0,'Plantas são produtoras porque fabricam substâncias orgânicas por fotossíntese.','Comece pela fonte de energia dos demais organismos.','ecologia,energia,cadeia alimentar'],
+   ['Variável de um experimento','Para estudar o efeito de uma condição, comparamos situações e evitamos mudar várias coisas ao mesmo tempo.','Ao testar efeito da luz nas plantas, podemos manter espécie, água e solo semelhantes.','Para testar o efeito da quantidade de água, o que deve variar?',['Água','Espécie e solo juntos','Tudo ao mesmo tempo'],0,'A quantidade de água é a variável investigada; as demais condições devem ser semelhantes.','Identifique o fator que queremos estudar.','experimento,variavel,hipotese']
+  ],
+  linguagem:[
+   ['Fato e opinião','Um fato pode ser conferido com evidências; uma opinião manifesta uma avaliação pessoal.','“O livro tem 80 páginas” é verificável. “É o melhor livro do mundo” é uma opinião.','Qual frase expressa uma opinião?',['O texto tem três parágrafos','Gostei muito do conto','A capa tem o título'],1,'Gostar do conto é uma avaliação subjetiva de quem leu.','Procure palavras que expressem preferência.','fato,opiniao,texto'],
+   ['Conectivos e explicações','Palavras como porque, portanto e porém ajudam a mostrar relações entre ideias.','“Choveu, portanto levei guarda-chuva” apresenta uma consequência.','Em “Estudei porque queria aprender”, a palavra “porque” indica...',['Causa ou motivo','Lugar','Tempo exato'],0,'O desejo de aprender explica o motivo de estudar.','O trecho depois de “porque” justifica a ação.','conectivos,porque,coesao']
+  ],
+  tecnologia:[
+   ['Condições em algoritmos','Uma condição permite escolher entre caminhos: se algo acontece, faça uma ação; caso contrário, faça outra.','Se está chovendo, leve guarda-chuva; senão, guarde-o.','Se a bateria estiver baixa, o que é coerente?',['Carregar o aparelho','Ignorar sempre','Desligar a tela por um segundo e esperar carga infinita'],0,'Carregar o aparelho é uma ação compatível com a condição.','A condição orienta a decisão.','algoritmo,condicional,se senao'],
+   ['Senhas e privacidade','Uma senha protege acesso, mas deve permanecer privada e não ser reutilizada indiscriminadamente.','Uma senha longa com palavras aleatórias é geralmente melhor que “123456”.','Qual é a melhor prática?',['Contar senha a desconhecidos','Usar senha forte e única','Escrever senha em recado público'],1,'Senhas fortes e distintas dificultam acesso indevido.','Proteja a senha como uma chave.','senha,seguranca,privacidade']
+  ]
+ },
+ '11-12': {
+  logica:[
+   ['Argumentos válidos','Um argumento é válido quando a conclusão decorre das premissas, independentemente de serem verdadeiras no mundo real.','Todos os A são B. X é A. Logo, X é B: o raciocínio segue das premissas.','Se todos os metais do conjunto conduzem eletricidade e X é um desses metais, concluímos que...',['X conduz eletricidade','X é isolante','Nada pode ser concluído'],0,'A conclusão segue diretamente das duas premissas informadas.','Combine as premissas sem inventar exceções.','deducao,premissa,argumento'],
+   ['Correlação não é causa','Dois acontecimentos podem ocorrer juntos sem que um provoque o outro; pode existir outro fator.','Aumento de venda de sorvete e de banhos de piscina pode estar ligado ao calor.','Duas medidas aumentaram ao mesmo tempo. Isso comprova causa?',['Sim, sempre','Não, são necessárias outras evidências','Somente se forem números pares'],1,'Coincidência ou correlação, isoladamente, não prova causalidade.','Pense em causas alternativas.','causa,correlacao,evidencia']
+  ],
+  matematica:[
+   ['Porcentagem e proporcionalidade','Porcentagem é uma razão em cada cem unidades. Para encontrar uma porcentagem de um valor, multiplique pela razão correspondente.','15% de 200 = 0,15 × 200 = 30.','Quanto é 20% de 250?',['25','50','75'],1,'20% = 1/5; 250 dividido por 5 é 50.','Use a equivalência 20/100 = 1/5.','porcentagem,proporcao,calculo'],
+   ['Probabilidade simples','Quando todos os resultados são igualmente prováveis, dividimos casos favoráveis pelo total de casos possíveis.','Em uma sacola com 3 bolas azuis e 2 verdes, P(azul) = 3/5.','Em um dado justo de seis faces, qual é a chance de sair 6?',['1/6','1/3','1/2'],0,'Existe uma face 6 entre seis resultados igualmente prováveis.','Conte os resultados favoráveis e os possíveis.','probabilidade,chance,fracao']
+  ],
+  ciencias:[
+   ['Controle experimental','Um teste confiável identifica variável independente, variável dependente e condições controladas.','Para investigar dissolução, podemos variar a temperatura mantendo volume e quantidade de soluto.','Qual é a variável independente nesse exemplo?',['Cor do recipiente','Temperatura','Resultado da dissolução'],1,'A temperatura é a condição que variamos deliberadamente.','É aquilo que o pesquisador modifica.','experimento,variavel,controle'],
+   ['Evidência e modelos','Modelos científicos simplificam fenômenos e precisam ser confrontados com observações e novas evidências.','O modelo do átomo mudou historicamente conforme experimentos revelaram novas características.','Quando evidências confiáveis contradizem um modelo, devemos...',['Ignorar as evidências','Reexaminar e melhorar o modelo','Proibir novas perguntas'],1,'A investigação científica deve avaliar as evidências e aperfeiçoar explicações.','Modelos são ferramentas revisáveis.','ciencia,modelo,evidencia']
+  ],
+  linguagem:[
+   ['Identificar tese e argumento','Uma tese é a posição defendida em um texto; argumentos apresentam razões para sustentá-la.','“Bibliotecas devem ser valorizadas porque ampliam o acesso à leitura”: a tese é valorizar bibliotecas.','Na frase “Devemos economizar água, pois é um recurso essencial”, qual é a tese?',['É um recurso essencial','Devemos economizar água','A palavra pois'],1,'A tese é a recomendação defendida; a segunda parte fornece a justificativa.','Pergunte: o que o autor está defendendo?','tese,argumentacao,texto'],
+   ['Checar fontes e contexto','Uma informação confiável precisa ser examinada quanto à fonte, data, contexto e evidências; popularidade não comprova verdade.','Uma imagem antiga pode ser publicada como se fosse de hoje: conferir a data evita interpretação equivocada.','Qual atitude melhora a verificação?',['Conferir origem e data','Confiar porque viralizou','Compartilhar sem ler'],0,'Verificar origem, data e contexto reduz risco de desinformação.','Não confunda popularidade com evidência.','fontes,noticias,verificacao']
+  ],
+  tecnologia:[
+   ['Validação de entrada','Sistemas devem verificar se uma entrada obedece às regras antes de processá-la, inclusive nos valores limites.','Se uma nota aceita 0 a 10, -1 e 11 devem ser recusados com mensagem explicativa.','Qual entrada é inválida nesse formulário?',['0','10','12'],2,'Doze ultrapassa a nota máxima estabelecida.','Confira os limites do intervalo.','programacao,validacao,teste'],
+   ['Privacidade desde o projeto','Antes de guardar dados, pergunte por que são necessários, quem acessa, por quanto tempo serão mantidos e como podem ser apagados.','Um exercício offline pode registrar acertos sem solicitar nome completo nem enviar respostas a terceiros.','Qual decisão reduz coleta desnecessária?',['Pedir endereço de todos','Guardar só o mínimo útil','Enviar dados a anunciantes'],1,'Guardar somente o necessário diminui a exposição de informações pessoais.','Dados que não são necessários não devem ser coletados.','lgpd,dados,privacidade,seguranca']
+  ]
+ }
+};

@@ -1,0 +1,27 @@
+Inteligent Hability 3.5 | © 2026 Nailson Rodrigues de Lima
+
+DOCUMENTO DISPONÍVEL OFFLINE
+Termos de Uso
+Versão 1.0 — 13 de outubro de 2026
+Inteligent Hability
+é uma ferramenta educativa de apoio à aprendizagem para crianças de 5 a 12 anos, desenvolvida com conteúdo offline, atividades, tutor automatizado e mecanismos de revisão.
+1. Quem deve utilizar
+A utilização por crianças deve ser acompanhada por responsável legal, especialmente para leitura, atividades e decisões sobre armazenamento. A escolha de faixa etária serve para adequar conteúdos; não é método de aferição de idade.
+2. Finalidade e limites
+As atividades têm finalidade educativa, lúdica e informativa. Não substituem escola, professor, avaliação clínica, atendimento psicológico ou diagnóstico de altas habilidades. O tutor é automatizado, com conteúdo local programado, e pode não compreender perguntas livres ou oferecer respostas incompletas.
+3. Segurança e comportamento
+O usuário não deve fornecer endereço, contato, nome completo, documentos, senhas, imagens identificáveis nem dados sensíveis em textos livres. As atividades propostas devem ser realizadas de forma segura, com supervisão quando envolverem materiais ou experiências.
+4. Conteúdo, autoria e licença
+© 2026 Nailson Rodrigues de Lima. Todos os direitos reservados, ressalvados componentes que tenham licenças próprias devidamente documentadas. O uso não transfere titularidade do código, textos ou identidade visual. Termos comerciais e condições de licença devem ser fornecidos separadamente na contratação, respeitados os direitos previstos na legislação aplicável.
+5. Funcionamento e disponibilidade
+A edição entregue funciona com arquivos locais; algumas funções, como síntese de voz, dependem das capacidades do navegador e de vozes instaladas no dispositivo. Não há garantia de operação ininterrupta em todos os navegadores. Atualizações devem ser distribuídas e instaladas pelo responsável pela implantação.
+6. Responsabilidade e direitos do consumidor
+O programa deve ser utilizado de acordo com sua finalidade pedagógica. Esta cláusula não exclui direitos legais do consumidor nem responsabilidade obrigatória prevista em lei. Falhas e conteúdos identificados como inadequados devem ser comunicados ao operador por canal oficial a ser informado antes da distribuição comercial.
+7. Privacidade e armazenamento
+O progresso pode permanecer apenas nesta sessão ou ser salvo localmente por opção apresentada ao responsável. Consulte a Política de Privacidade para finalidades, dados, exportação e exclusão. O aplicativo não verifica a identidade de quem marca uma declaração de responsável.
+8. Comercialização e atendimento
+Pendente antes de publicação comercial:
+identificação do fornecedor/controlador, endereço ou dados exigidos pela oferta, contato de suporte e privacidade, preço, condições de contratação, cancelamento e eventuais direitos de arrependimento aplicáveis. A implantação também deverá informar a classificação indicativa quando atribuída/exigível.
+9. Legislação aplicável
+Aplicam-se, conforme o caso, o Estatuto da Criança e do Adolescente, a LGPD, o ECA Digital, o Código de Defesa do Consumidor e demais normas brasileiras pertinentes. Qualquer conflito será resolvido nos termos da legislação, sem afastar foro legalmente assegurado ao consumidor.
+Modelo operacional para versão offline. Requer revisão jurídica e identificação do fornecedor antes da oferta comercial.

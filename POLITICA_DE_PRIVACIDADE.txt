@@ -1,0 +1,30 @@
+Inteligent Hability 3.5 | © 2026 Nailson Rodrigues de Lima
+
+TRANSPARÊNCIA E MELHOR INTERESSE
+Política de Privacidade
+Versão 1.0 — 13 de outubro de 2026
+Versão local/offline.
+Esta política descreve o funcionamento dos arquivos disponibilizados neste pacote. A publicação em um domínio, loja ou servidor pode implicar tratamento adicional de dados técnicos pelo provedor de hospedagem, que exigirá atualização desta política.
+1. O que o aplicativo faz
+Disponibiliza atividades por faixa etária, tutor pedagógico automatizado, questões, flashcards, missões e projetos. As perguntas livres ao tutor são processadas durante o uso e não são adicionadas ao histórico pelo aplicativo. A memória de contexto do tutor fica apenas na memória da sessão e não é incluída no backup.
+2. Quais dados são utilizados
+Faixa etária selecionada (intervalo, não data de nascimento), respostas e tentativas dos desafios, contadores agregados de prática do tutor por área, revisões, escolhas nas missões, textos voluntários de projetos criativos, preferências de acessibilidade e opção de armazenamento. Não solicitamos nome, e-mail, CPF, fotografia, localização nem dados biométricos. Evite incluir dados pessoais nos campos livres.
+3. Onde e por quanto tempo ficam
+Por padrão, os dados de estudo ficam somente na sessão aberta e são perdidos ao recarregar/fechar a página. Se um responsável optar por gravar, serão salvos neste navegador por armazenamento local (localStorage) até a exclusão voluntária ou limpeza do navegador. O aplicativo não transmite esses registros a servidores nem usa ferramentas próprias de publicidade ou métricas remotas. O arquivo JSON exportado passa a ser controlado por quem o salva.
+4. Finalidades e fundamento de tratamento
+As informações são utilizadas para adaptar os exercícios, exibir o progresso e permitir revisões. Os dados agregados de prática do tutor contêm somente tentativas e acertos por área/faixa, sem texto das perguntas. Quando houver dados pessoais, a base legal e o melhor interesse da criança devem ser avaliados pelo controlador efetivo, observando o art. 14 da LGPD e o entendimento da ANPD. A opção local apresentada no produto não constitui, isoladamente, prova suficiente de consentimento parental verificável.
+5. Controle pelo usuário e responsáveis
+É possível estudar sem salvar, ativar ou desativar o registro local, exportar os dados em JSON, importar backup e apagar os registros deste navegador. Limpar os dados não apaga cópias de backup já exportadas. Não há monitoramento secreto nem perfilamento publicitário no código fornecido.
+6. Compartilhamento e terceiros
+Nesta versão, a aplicação não envia dados para serviços externos. O navegador, sistema operacional, extensões instaladas ou infraestrutura usada para distribuir os arquivos podem ter tratamentos próprios, independentes deste código. Não há integração com redes sociais, chat entre usuários ou anúncios.
+7. Segurança e riscos
+O software evita solicitações excessivas e usa execução local, mas arquivos e armazenamento do aparelho podem ser acessados por outras pessoas que utilizem o mesmo perfil de navegador. Não há criptografia própria do progresso, autenticação parental forte nem sincronização entre aparelhos. Dispositivos compartilhados merecem cuidado especial.
+8. Crianças e adolescentes
+O projeto prioriza linguagem adequada à idade, ausência de publicidade personalizada, limites do tutor automatizado e opção de não retenção. Os responsáveis devem acompanhar o uso. A escolha de faixa e a declaração local não comprovam maioridade ou vínculo parental.
+9. Titular dos direitos e contato
+O autor do software é Nailson Rodrigues de Lima.
+Antes de comercialização/publicação, o operador deverá identificar o controlador de dados, fornecer canal de atendimento e de exercício de direitos, política para registros de hospedagem e, quando aplicável, encarregado e responsáveis contratados.
+Não há canal de solicitação remota dentro deste pacote offline.
+10. Atualizações
+Alterações materiais em arquitetura, hospedagem, pagamentos, contas, analytics, tutor generativo ou compartilhamento exigem revisão desta política, da avaliação de riscos e das informações apresentadas aos responsáveis.
+Documento informativo relativo ao pacote offline; não equivale à certificação legal ou auditoria independente.

@@ -1,0 +1,26 @@
+INTELIGENT HABILITY 3.5
+© 2026 Nailson Rodrigues de Lima
+
+OPÇÃO 1 — ARQUIVO ÚNICO
+Abra Inteligent_Hability_V3_5_Standalone.html no navegador moderno.
+Ele já contém código, estilos e logomarca e não exige internet.
+
+OPÇÃO 2 — PACOTE MODULAR
+Mantenha index.html e todos os demais arquivos e subpastas da aplicação juntos.
+Abra index.html em navegador moderno ou publique a pasta em hospedagem estática.
+
+PRIMEIRO ACESSO
+Escolha o modo privado (sem guardar progresso) ou ative armazenamento local
+com responsável. A opção local não autentica a identidade do adulto.
+
+MÓDULOS
+Início, Desafios, Meu tutor, Mapas mentais, Flashcards, Laboratório,
+Missões, Responsáveis, Termos de Uso e Política de Privacidade.
+
+NOVO TUTOR
+Abra Meu tutor e escolha uma área; digite uma pergunta sobre tema disponível,
+use os botões de pista, orientação guiada, prática gerada ou plano personalizado.
+Não compartilhe dados pessoais. Sem API, sem modelo neural.
+
+O aplicativo requer testes adicionais em dispositivos e avaliação pedagógica e
+jurídica antes de distribuição comercial para crianças.

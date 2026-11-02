@@ -1,0 +1,36 @@
+AVALIAÇÃO PRELIMINAR DE CONFORMIDADE — INTELIGENT HABILITY 3.0
+Data: 13/10/2026 | Escopo: análise estática de HTML, CSS e JavaScript locais, sem inspeção de servidor, distribuição, contratos comerciais ou testes com crianças.
+
+ACHADOS POSITIVOS
+- Aplicativo sem bibliotecas remotas e sem requisições de rede programadas no código examinado.
+- Dados pedagógicos mantidos no localStorage, com exportação/importação JSON e comando de exclusão.
+- Linguagem que evita apresentar o tutor por regras como IA generativa ou ferramenta diagnóstica.
+
+RISCOS E AÇÕES EXIGIDAS ANTES DA VENDA
+ALTO | Controlador/fornecedor, contato de privacidade e suporte comercial ainda não identificados. Completar antes de distribuição.
+ALTO | Armazenamento local em texto simples permite leitura por terceiros que acessam dispositivo/navegador ou backup; definir modelo de uso familiar e proteção do aparelho.
+ALTO | Não há comprovação de representação parental nem trilha auditável verificável. Não utilizar autodeclaração/checkbox isolados como prova de consentimento válido; desenhar solução proporcional se o modelo de dados exigir.
+ALTO | Falta documento formal de avaliação do melhor interesse de crianças e adolescentes e mapeamento das bases legais por atividade. Produzir e revisar com especialista.
+ALTO | Política de privacidade e termos são minutas; atualizar com identificação, contato, ofertas, responsabilidades e versão publicada.
+MÉDIO | Verificação de idade é somente seleção autodeclarada de faixa pedagógica; não afirmar que é mecanismo robusto de aferição etária.
+MÉDIO | Retenção indeterminada até exclusão/limpeza do navegador; definir gestão de ciclo de vida e instruções de retenção.
+MÉDIO | Não há canal de direitos, plano operacional de incidentes, protocolo de revisão pedagógica, pentest ou validação de acessibilidade documentados.
+MÉDIO | Importação JSON deve ser submetida a testes adversariais, incluindo limite de tamanho, conteúdo inesperado e dados pessoais indevidos.
+
+MECANISMOS PARA A IMPLANTAÇÃO
+1. Inventário de dados por finalidade, base legal, controlador, ciclo de vida e compartilhamentos.
+2. Avaliação documentada do melhor interesse e, quando adequado, Relatório de Impacto à Proteção de Dados Pessoais (RIPD).
+3. Política clara para responsáveis e linguagem simplificada para crianças; revisão com assessor jurídico.
+4. Supervisão familiar, orientação explícita de não inserção de dados sensíveis e retenção mínima.
+5. Canal real de direitos do titular e suporte; políticas de incidentes e vulnerabilidades.
+6. Avaliação do ECA Digital e da orientação atualizada da ANPD, inclusive aferição de idade proporcional ao risco e características da distribuição.
+7. QA funcional, acessibilidade, auditoria de dependências, revisão autoral e simulações de fluxo de exclusão.
+8. Se houver nuvem, contas, IA externa ou anúncios, reprojetar segurança, consentimento e fluxo de dados antes de ativar.
+
+REFERÊNCIAS OFICIAIS
+- LGPD, Lei 13.709/2018, art. 14: https://normas.leg.br/?urn=urn:lex:br:federal:lei:2018;13709
+- Lei 15.211/2025 (ECA Digital): https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15211.htm
+- ANPD, orientações ECA Digital: https://www.gov.br/anpd/pt-br/assuntos/eca-digital/
+- ANPD, enunciado 1/2023: https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-divulga-enunciado-sobre-o-tratamento-de-dados-pessoais-de-criancas-e-adolescentes
+
+CONCLUSÃO: conformidade parcial. Não existe certificação/homologação legal atestada. Revisão jurídica e técnica pré-comercialização é necessária.

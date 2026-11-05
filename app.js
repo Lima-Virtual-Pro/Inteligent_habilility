@@ -1,4 +1,4 @@
-/* Inteligent Hability 3.6 | offline, tutor local e privacidade por padrão. */
+/* Inteligent Hability 3.5 | offline, tutor local e privacidade por padrão. */
 (() => {
   'use strict';
   const KEY='inteligent-hability.v3';
@@ -142,7 +142,7 @@
     const shown=document.querySelector('.view:not([hidden])')?.id;
     if(shown==='responsaveis')renderReport();
   }
-  function resetSession(){if(typeof IHSourceAI36!=='undefined')IHSourceAI36.resetSession();else if(typeof IHAdvancedAI!=='undefined')IHAdvancedAI.resetSession();tutorActivity=null;tutorActivityRecorded=false;if($('ai35-pratica'))$('ai35-pratica').innerHTML='';if($('ai35-feedback'))$('ai35-feedback').innerHTML='';if($('ai35-plano-resposta'))$('ai35-plano-resposta').innerHTML='';activeQuestion=null;answerIndex=null;hintCount=0;questionResult=null;activeCard=null;cardShown=false;missionStory=[];missionChoices=[];missionIndex=0;workingMissionId='';}
+  function resetSession(){if(typeof IHAdvancedAI!=='undefined')IHAdvancedAI.resetSession();tutorActivity=null;tutorActivityRecorded=false;if($('ai35-pratica'))$('ai35-pratica').innerHTML='';if($('ai35-feedback'))$('ai35-feedback').innerHTML='';if($('ai35-plano-resposta'))$('ai35-plano-resposta').innerHTML='';activeQuestion=null;answerIndex=null;hintCount=0;questionResult=null;activeCard=null;cardShown=false;missionStory=[];missionChoices=[];missionIndex=0;workingMissionId='';}
   function stats(age=state.faixa){
     const qs=QUESTION_BANK.filter(q=>q.f===age);
     const keys=new Set(qs.map(q=>q.id));
@@ -202,7 +202,6 @@
     if(name==='inicio')renderHome();
     if(name==='desafios'){if(!activeQuestion||activeQuestion.f!==state.faixa)nextQuestion();else renderQuestion();}
     if(name==='tutor')renderTutor();
-    if(name==='biblioteca')renderLibrary();
     if(name==='mapas')renderMap();
     if(name==='flashcards')nextCard(false);
     if(name==='laboratorio')renderLab();
@@ -301,7 +300,7 @@
     const lastError=recent?QUESTION_BANK.find(q=>q.id===recent.id):null;
     const rawTopic=$('tutor-topico').value;
     const selectedTopic=rawTopic===''?-1:Number(rawTopic);
-    const answer=IHSourceAI36.respond({text:raw,forced:forcedIntent,age:state.faixa,area,
+    const answer=IHAdvancedAI.respond({text:raw,forced:forcedIntent,age:state.faixa,area,
       topics:TUTOR_TOPICS,lessons:LESSONS,lastError,selectedTopic});
     if(answer.area!==area&&VALID_AREAS.includes(answer.area)){
       $('tutor-area').value=answer.area;renderTutor();
@@ -309,24 +308,8 @@
     if(Number.isInteger(answer.topic)&&answer.topic>=0&&answer.topic<TUTOR_TOPICS[state.faixa][tutorArea()].length){
       $('tutor-topico').value=String(answer.topic);renderTutor();
     }
-    const provenance=answer.sourceInfo?`<div class="source-proof"><strong>📖 Referência: ${esc(answer.sourceInfo.name)}</strong><p>${esc(answer.sourceInfo.scope)}</p><a href="${esc(answer.sourceInfo.url)}" target="_blank" rel="noopener noreferrer">Consultar fonte institucional (usa internet) ↗</a><p class="muted small-text">${answer.sourceInfo.type==='apoio_direto'?'Assunto com apoio direto da fonte':'Orientação geral; a fonte não valida individualmente este texto.'} · Conteúdo autoral, sem revisão pedagógica independente.</p></div>`:'';
-    box.innerHTML=`<div class="feedback-box ${answer.confidence==='baixa'?'warn':''}"><strong>💡 ${esc(answer.title)}</strong><p>${esc(answer.response)}</p><p class="muted small-text">Base: ${esc(answer.source||'regras locais')} · ${answer.confidence==='baixa'?'Tema não confirmado':'Resposta limitada à biblioteca disponível'}. ${answer.mode==='calculo'?'Conferência por cálculo local.':''}</p>${provenance}</div>`;
+    box.innerHTML=`<div class="feedback-box ${answer.confidence==='baixa'?'warn':''}"><strong>💡 ${esc(answer.title)}</strong><p>${esc(answer.response)}</p><p class="muted small-text">Base: ${esc(answer.source||'regras locais')} · ${answer.confidence==='baixa'?'Tema não confirmado':'Resposta vinculada ao conteúdo disponível'}. ${answer.mode==='calculo'?'Conferência por cálculo local.':''}</p></div>`;
     if(forcedIntent==='pratica')startTutorPractice();
-  }
-  function renderLibrary(){
-    const q=$('biblioteca-busca').value.trim(),area=$('biblioteca-area').value;
-    const matches=IHSourceAI36.search(q,{age:state.faixa,area,limit:36});
-    $('biblioteca-contagem').textContent=`${matches.length} registro(s) exibido(s) · faixa ${state.faixa} anos · ${IHSourceAI36.catalog.length} registros na base total (faixas diferentes exigem mudança na seleção de idade).`;
-    $('biblioteca-resultados').innerHTML=matches.map(e=>`<button type="button" class="library-card" data-libid="${esc(e.id)}"><small>${esc(AREAS[e.area].name)} · ${esc(e.kind)}</small><strong>${esc(e.title)}</strong><span>Ver explicação e referência →</span></button>`).join('')||'<p class="empty-note">Nenhuma correspondência segura. Tente outro termo, outra área ou mude a faixa de idade.</p>';
-    $('biblioteca-resultados').querySelectorAll('[data-libid]').forEach(b=>b.addEventListener('click',()=>showLibraryDetail(b.dataset.libid)));
-    if(!matches.length)$('biblioteca-detalhe').innerHTML='';
-  }
-  function showLibraryDetail(id){
-    const e=IHSourceAI36.detail(id);if(!e)return;
-    const src=IHSourceAI36.sources[e.source];if(!src)return;
-    $('biblioteca-detalhe').innerHTML=`<article class="library-detail"><span class="lesson-badge">📙 ${esc(AREAS[e.area].name)} · ${esc(e.kind)}</span><h2>${esc(e.title)}</h2><p>${esc(e.explain)}</p><div class="feedback-box good"><strong>Exemplo</strong><p>${esc(e.example)}</p></div><h3>Investigação orientada</h3><p>${esc(e.ask)}</p><p><strong>Pista:</strong> ${esc(e.hint)}</p>${e.pitfall?`<p class="library-caution"><strong>Evite este erro:</strong> ${esc(e.pitfall)}</p>`:''}<div class="source-proof"><strong>Fonte de referência: ${esc(src.name)}</strong><p>${esc(src.scope)}</p><a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">Abrir referência institucional ↗</a><p class="muted small-text">${src.type==='apoio_direto'?'A fonte aborda diretamente o assunto.':'Referência curricular/temática; não equivale à validação específica da resposta.'} Texto e perguntas elaborados para o aplicativo; revisão humana especializada ainda necessária.</p></div><button id="biblioteca-estudar" type="button" class="btn btn-main">Conversar com o tutor sobre este assunto</button></article>`;
-    $('biblioteca-estudar').addEventListener('click',()=>{$('tutor-area').value=e.area;renderTutor();$('pergunta-tutor').value=e.title;go('tutor');tutorRespond();});
-    $('biblioteca-detalhe').scrollIntoView({block:'nearest',behavior:'auto'});
   }
   function tutorSkillsSave(grade,practice){
     if(tutorActivityRecorded||!['correct','incorrect'].includes(grade.status))return;
@@ -561,13 +544,11 @@
     document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.view)));
     $('faixa').addEventListener('change',e=>{state.faixa=VALID_AGES.includes(e.target.value)?e.target.value:'5-7';save();resetSession();renderHome();
       const current=document.querySelector('.view:not([hidden])')?.id||'inicio';
-      if(current==='desafios')nextQuestion();else if(current==='tutor')renderTutor();else if(current==='biblioteca')renderLibrary();else if(current==='mapas')renderMap();else if(current==='flashcards')nextCard();else if(current==='laboratorio')renderLab();else if(current==='missoes')renderMission();else if(current==='responsaveis')renderReport();
+      if(current==='desafios')nextQuestion();else if(current==='tutor')renderTutor();else if(current==='mapas')renderMap();else if(current==='flashcards')nextCard();else if(current==='laboratorio')renderLab();else if(current==='missoes')renderMission();else if(current==='responsaveis')renderReport();
     });
     $('quiz-area').addEventListener('change',nextQuestion);
     $('quiz-outro').addEventListener('click',nextQuestion);
-    $('biblioteca-busca').addEventListener('input',renderLibrary);
-    $('biblioteca-area').addEventListener('change',renderLibrary);
-    $('tutor-area').addEventListener('change',()=>{IHSourceAI36.resetSession();renderTutor();tutorActivity=null;$('ai35-pratica').innerHTML='';$('ai35-feedback').innerHTML='';});
+    $('tutor-area').addEventListener('change',()=>{IHAdvancedAI.resetSession();renderTutor();tutorActivity=null;$('ai35-pratica').innerHTML='';$('ai35-feedback').innerHTML='';});
     $('tutor-topico').addEventListener('change',renderTutor);
     document.querySelectorAll('[data-tutor-intent]').forEach(b=>b.addEventListener('click',()=>tutorRespond(b.dataset.tutorIntent)));
     $('tutor-perguntar').addEventListener('click',()=>tutorRespond());

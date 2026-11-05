@@ -1,4 +1,4 @@
-Inteligent Hability 3.6 | © 2026 Nailson Rodrigues de Lima
+Inteligent Hability 3.5 | © 2026 Nailson Rodrigues de Lima
 
 DOCUMENTO DISPONÍVEL OFFLINE
 Termos de Uso
@@ -25,5 +25,3 @@ identificação do fornecedor/controlador, endereço ou dados exigidos pela ofer
 9. Legislação aplicável
 Aplicam-se, conforme o caso, o Estatuto da Criança e do Adolescente, a LGPD, o ECA Digital, o Código de Defesa do Consumidor e demais normas brasileiras pertinentes. Qualquer conflito será resolvido nos termos da legislação, sem afastar foro legalmente assegurado ao consumidor.
 Modelo operacional para versão offline. Requer revisão jurídica e identificação do fornecedor antes da oferta comercial.
-
-Referências institucionais são material de consulta opcional, não endosso ou validação de todos os conteúdos. Acesso externo precisa de internet e deve ser acompanhado por responsável.

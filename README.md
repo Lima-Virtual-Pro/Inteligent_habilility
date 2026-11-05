@@ -1,40 +1,52 @@
-# Inteligent Hability 3.6 — biblioteca local orientada por fontes
+# Inteligent Hability 3.5 — Tutor Cognitivo Local
 
-**© 2026 Nailson Rodrigues de Lima.** Todos os direitos reservados.
+© 2026 Nailson Rodrigues de Lima. Todos os direitos reservados.
 
-## Iniciar
+**Finalidade:** aplicativo educacional offline para crianças de 5 a 12 anos, dividido nas faixas 5–7, 8–10 e 11–12 anos. Esta edição é **funcional para piloto supervisionado**, mas ainda depende de validação pedagógica independente, dispositivos reais, acessibilidade assistiva e análise jurídica da distribuição comercial.
 
-- Abra `Inteligent_Hability_V3_6_Standalone.html` em navegador atualizado, sem instalar dependências. A operação principal funciona offline.
-- Alternativamente, use `index.html` mantendo juntos CSS, JS e `assets/`, ou hospede o conteúdo estático em HTTPS.
-- A biblioteca inclui uma seleção de links a fontes oficiais; eles **só** exigem acesso à internet se o usuário optar por abri-los.
-- Acesse **Biblioteca confiável**, pesquise um assunto, veja a explicação e a referência e clique em “Conversar com o tutor”.
+## Como executar
 
-## Acervo e evolução
+- **Sem instalação:** abra `Inteligent_Hability_V3_5_Standalone.html` com navegador atualizado, inclusive no Windows ou no Android por meio de um gerenciador de arquivos que permita abrir HTML local. A disponibilidade varia com o navegador e as restrições de arquivos locais.
+- **Versão modular:** abra `index.html` com todos os arquivos `.js`, `styles.css`, `favicon.svg` e a pasta `assets` preservados juntos. Também pode publicar a pasta modular integral em hospedagem estática HTTPS.
+- O app não precisa de Python, Node.js, servidor, internet, login, conexão de API, chave ou pagamentos durante a operação.
+- Na primeira utilização, escolha **Modo temporário** ou permita armazenamento local após a participação do responsável. O segundo modo é uma escolha local e não comprova identidade nem consentimento verificável.
 
-- **179 registros consultáveis:** 41 conceitos curados para 3.6, 30 temas complementares, 33 conceitos de 3.5 e 75 perguntas e respostas comentadas da nova versão.
-- **150 desafios de múltipla escolha** no total (75 anteriores + 75 novos), distribuídos por 3 faixas etárias e 5 áreas.
-- **60 temas aprofundados**, 15 miniaulas, 15 missões, 24 laboratórios e flashcards gerados a partir das aulas. Não contabilizar combinações automáticas como questões inéditas manualmente escritas.
-- **7 referências institucionais** com natureza de uso documentada: orientação geral ou apoio direto ao assunto.
-- Pesquisa local com sinônimos, filtros de idade, área, contexto efêmero, pistas graduais, link voluntário às fontes e recusa por insuficiência de informação.
+## Novidades reais da 3.5
 
-## Inteligência implementada e limites
+1. Motor `IHAdvancedAI` com detecção lexical melhorada de conceitos e intenções, recuperação de conteúdo complementar e continuidade de assunto **somente na memória da sessão**.
+2. **33 conceitos adicionais**, com explicações, exemplos, pergunta para reflexão e pistas, distribuídos por faixa etária e área. A aplicação anterior já continha 75 desafios, 15 miniaulas, 30 temas aprofundados, 45 flashcards, 12 laboratórios e 9 missões.
+3. Interpretação restrita e explicável de problemas verbais de **adição, subtração, multiplicação e divisão**, além das operações matemáticas já implementadas na 3.4. Questões ambíguas devem gerar pedido de especificação, nunca um chute numérico.
+4. Modo de investigação guiada e pista, sem oferecer automaticamente a solução final.
+5. Gerador de práticas com parâmetros variados, para três faixas; exercícios numéricos com validação de respostas e exercícios de múltipla escolha ligados à biblioteca. Após erro, fornece primeiro uma pista; após nova tentativa, explica a solução.
+6. Planejamento de estudo que utiliza tentativas de desafios e contadores agregados de acertos da oficina; **não diagnostica capacidade, inteligência ou condição da criança**.
+7. Novos dados armazenáveis: apenas número de tentativas e acertos da oficina por faixa e área. O texto livre das perguntas do tutor não é gravado no estado nem exportado nos backups.
+8. Acessibilidade existente preservada, identidade visual e logomarca mantidas; documentos legais atualizados em relação aos novos contadores e à memória efêmera.
 
-O tutor é **simbólico e determinístico**, construído com regras e catálogos locais. Não utiliza modelos neurais generativos, LLM embutido, buscas automáticas na web ou atualização em tempo real. Não assegura respostas a toda pergunta, precisão universal, domínio de conteúdos médicos, aconselhamento individualizado ou certificação pedagógica. Pode haver ambiguidades, erros de linguagem e conceitos desatualizados.
+## Limites honestos da IA
 
-## Proteção e uso infantil
+O motor é **IA simbólica local**, na acepção prática de regras de inferência e recuperação de conhecimento. **Não** é um modelo neural de linguagem nem possui treinamento contínuo, criatividade irrestrita, compreensão aberta da linguagem natural ou validação clínica. Um modelo generativo local real exigiria distribuição opcional de pesos de modelo, memória, aceleração/CPU e validação adicionais, o que não integra este pacote.
 
-O sistema oferece modo sem armazenamento, opção de salvamento local mediante declaração do responsável, backup, exclusão, avisos de limite do tutor e orientação para não inserir dados pessoais. A declaração simples não é um sistema confiável de verificação de identidade/parentalidade. Não há transmissão automática de conversas pela aplicação. Abrir links para fontes externas é uma ação voluntária e implica saída do contexto totalmente offline.
+O reconhecimento de dados sensíveis e situações de risco é básico, não infalível. O tutor não substitui professor, responsável, psicólogo ou serviços de emergência.
 
-## QA reproduzível
+## Privacidade e backups
 
-Em ambiente de desenvolvimento, use Node.js e Python+Playwright+Chromium (essas dependências não são necessárias para usar o aplicativo):
+Sem ativação de armazenamento, o progresso é apenas temporário. Ativado o salvamento, usa `localStorage` do navegador e exportação/importação JSON. O backup pode conter textos escritos no laboratório e, portanto, requer cuidado no armazenamento; crianças não devem inserir nomes completos, localização, contatos, senhas ou outras informações pessoais. Os resultados da oficina são armazenados somente como contadores agregados por área e faixa.
+
+Para distribuição web, regras de hospedagem, logs do servidor, fornecedores, suporte e obrigações de proteção de crianças precisam ser analisadas novamente. Consulte Termos, Política de Privacidade e a Avaliação de Conformidade.
+
+## QA reproduzível para desenvolvedores
+
+Na pasta `qa/` existem testes que podem ser executados em ambiente de desenvolvimento com Node.js e, opcionalmente, Python + Playwright/Chromium:
 
 ```
-node qa/test_source36.js
 node qa/test_engine.js
 node qa/test_ai35.js
 node qa/test_catalog35.js
-python qa/test_browser36.py
+python qa/test_browser_v35.py
 ```
 
-O relatório `QA_RELATORIO_V3_6.md` apresenta os resultados observados e ressalva testes não feitos. O navegador automatizado usa armazenamento simulado, não equivale a validação em aparelhos reais. É necessária revisão humana especializada da biblioteca antes de publicação comercial.
+Os quatro comandos passaram no ambiente de avaliação. O teste de navegador usa armazenamento simulado por bloqueio da navegação na infraestrutura de testes. A tentativa com HTTP local foi bloqueada por política do ambiente antes de carregar os arquivos; não é evidência de falha do app, nem comprova teste de `localStorage` em dispositivo real.
+
+## Publicação e venda
+
+A implantação comercial requer identificação do fornecedor/controlador, atendimento a titulares, revisão jurídica de LGPD/ECA Digital/CDC, ensaios com crianças acompanhadas por responsáveis e validação pedagógica especializada de toda a biblioteca. Não se afirma homologação comercial ou certificação jurídica.
